@@ -2,6 +2,10 @@ package negocio;
 
 import java.io.Serializable;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
 /**
  * Entity implementation class for Entity: Shopping
  * 
@@ -9,6 +13,7 @@ import java.io.Serializable;
 @Entity
 public class Shopping implements Serializable {
 	@Id
+	@GeneratedValue
 	private int id_shopping;
 	private String nome;
 	private String rua;
